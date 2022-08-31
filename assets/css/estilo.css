@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root{
+    --fonte-desc: "Shadows Into Light";
+    --fonte-title: "Permanent Marker";
+    --cor1: #efb810;
+    --cor2: #daa520;
+}
 
 *{
     margin: 0;
@@ -8,11 +17,29 @@ body{
     background-color: rgb(153, 153, 153)
 }
 header{
+    display: flex;
+    justify-content: center;
     text-align: center;
+    font-family: var(--fonte-title);
     
+}
+.michel-gif{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 70px;
+}
+.michel-2{
+    display: flex;
+    width: 60px;
+    height: 70px;
+    justify-items: center;
 }
 .cabecalho > p{
     text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: var(--fonte-title);
 }
 main{
     margin: auto;
@@ -35,6 +62,8 @@ p{
     letter-spacing: 2px;
     text-indent: 1.5em;
     line-height: 1.5em;
+    color: var(--cor2);
+    text-shadow: 0px 1px 1px #fff;
 }
 main img{
     display: block;
@@ -44,6 +73,32 @@ main img{
 }
 article{
     color: bisque;
+}
+aside{
+    background:(linear-gradient(to));
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--fonte-desc);
+}
+aside{
+    margin-top: 15px;
+    background-image: linear-gradient(90deg, rgb(68, 61, 61), rgb(136, 136, 141));
+    color: var(--cor1);
+    font-size: 19px;
+    
+}
+
+aside > ul{
+    list-style-type: '\2611\00A0';
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+    margin-bottom: 15px;
+}
+aside > ul > strong{
+    color: #fff;
 }
 footer{
    
@@ -57,7 +112,4 @@ footer > p > a{
 }
 footer > p > a:hover{
     color: blue;
-}
-@media screen {
-    
 }
