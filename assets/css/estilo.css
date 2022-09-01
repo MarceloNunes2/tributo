@@ -23,17 +23,17 @@ header{
     font-family: var(--fonte-title);
     
 }
-.michel-gif{
+.container{
     display: flex;
-    align-items: center;
-    width: 60px;
-    height: 70px;
+    justify-content: space-between;
+    
 }
-.michel-2{
-    display: flex;
-    width: 60px;
-    height: 70px;
-    justify-items: center;
+.bloco img{
+    height: 100px;
+}
+figcaption{
+    text-align: center;
+    padding-bottom: 10px;
 }
 .cabecalho > p{
     text-align: center;
@@ -85,6 +85,10 @@ aside{
     background-image: linear-gradient(90deg, rgb(68, 61, 61), rgb(136, 136, 141));
     color: var(--cor1);
     font-size: 19px;
+    background-image: url(../imagens/Michael-Jackson-Wallpaper-576x1024.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
     
 }
 
@@ -100,6 +104,26 @@ aside > ul{
 aside > ul > strong{
     color: #fff;
 }
+
+section.normal{
+    background-image: url(../imagens/Michael-Jackson-Wallpaper-576x1024.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+section.imagens{
+    
+    background-image: url(../imagens/Michael-Jackson-Wallpaper-576x1024.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+
+.audio{
+    height: 25px;
+    
+}
+
 footer{
    
     color: aliceblue;
